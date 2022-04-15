@@ -1,0 +1,70 @@
+
+
+
+//node structure
+    int data
+    Node* next (pointer to next node)
+
+//class linked_list
+//creates linked_list class so you don't have to
+    private:
+        head = node_pointer
+    public:
+        linked_list
+        head = NULL
+
+
+    //adds new element at the end of the list
+    push_back(int new_element)
+        Node* new_node = new_node()
+        new_node->data = new_element
+        new_node->next = NULL
+        if(head is NULL)
+            head = new_node
+        else
+            Node* temp = head
+            while(temp pointing to next is not NULL)
+                temp = temp->next
+            temp->next = new_node
+
+
+
+    //deletes an element at the given position
+    pop_at(int position)
+    if (position < 1)
+        print(error: must be >= 1)
+    
+    elif (position is 1 and is not NULL)
+        Node* node_to_delete = head
+        head = head->next
+        //reallocate memory that was used previously (delete)
+        free(node_to_delete) 
+    
+    else 
+        Node* temp = head
+        //for when i is less than 1-position, add to i
+        for (int i = 1; i < position-1; i++) 
+        if temp is not NULL
+            temp = temp-> next
+
+
+    //display the contents of the linked_list
+        print_list function define
+        as long as list is not NULL
+        print(list)
+
+// test code
+int main()
+    linkedlist, mylist
+
+    //add elements to list
+    mylist.push_back(5)
+    mylist.push_back(5)
+    mylist.push_back(5)
+    mylist.print_list
+
+    //delete an element at position 3
+    mylist.pop_at(3)
+    mylist.print_list
+
+
